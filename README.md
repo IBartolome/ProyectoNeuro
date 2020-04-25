@@ -1,6 +1,6 @@
 # ProyectoNeuro
 
-Autores: Iván Bartolomé González y Judith Manchón Vállegas
+**Autores**: Iván Bartolomé González y Judith Manchón Vállegas
 
 
 ## Ficheros
