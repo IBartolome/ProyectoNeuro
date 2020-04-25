@@ -32,7 +32,7 @@ def load_model(img_width,img_height, name):
     model.load_weights(name)
     return model,last_conv_layer
 
-
+#%%
 def get_model(img_width,img_height):
     """
         Funcion de creacion de la Red
@@ -269,7 +269,7 @@ if __name__ == "__main__":
         Entrenamiento y visualizacion
         
     """		  
-    nb_epoch              =   5
+    nb_epoch              =   50
     nb_train_samples      = 4000
     nb_validation_samples =  400
     model_name            = "model.h5"
@@ -312,9 +312,9 @@ if __name__ == "__main__":
 
     
     #  Si queremos cargar el modelo:
-    #loaded_model, loaded_last_layer =  load_model(img_width, img_height, "model_50.h5")
-    #show_heatmap(loaded_model,loaded_last_layer,'data/cat.jpg', show_layers = True)
-    #show_heatmap(loaded_model,loaded_last_layer,'data/dog.jpg', show_layers = False)
+    loaded_model, loaded_last_layer =  load_model(img_width, img_height, "model_50.h5")
+    show_heatmap(loaded_model,loaded_last_layer,'data/dog.jpg', show_layers = True)
+    show_heatmap(loaded_model,loaded_last_layer,'data/cat.jpg', show_layers = False)
 
 
 
